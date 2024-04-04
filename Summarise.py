@@ -21,6 +21,8 @@ from easyocr import Reader
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
+import extra_streamlit_components as stx
+
 
 if not firebase_admin._apps:
     cred = credentials.Certificate(r"serviceAccountKey.json")
@@ -28,16 +30,16 @@ if not firebase_admin._apps:
 
 db = firestore.client()
 
-page_bg_img="""
-<style>
-[data-testid="stApp"] {
-    opacity: 0.8;
-    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fd6a542d-ade9-45c7-afed-38d6dde42ed3/det8vca-35996a6f-d2fc-4c75-92cb-ff3e17e346eb.png/v1/fill/w_1280,h_720,q_80,strp/sunset_gradient_wallpaper_3840_x_2160_4k_by_themusicalhypeman_det8vca-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZmQ2YTU0MmQtYWRlOS00NWM3LWFmZWQtMzhkNmRkZTQyZWQzXC9kZXQ4dmNhLTM1OTk2YTZmLWQyZmMtNGM3NS05MmNiLWZmM2UxN2UzNDZlYi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.bT1n6nWrYxubG7TiqrvShc4cGD1_FpCeSzcrXIWTuE8");
-    background-repeat: repeat;
-}
-</style>
-"""
-st.markdown (page_bg_img, unsafe_allow_html=True)
+# page_bg_img="""
+# <style>
+# [data-testid="stAppViewContainer"] {
+#     opacity: 0.8;
+#     background: rgb(148,0,150);
+#     background: linear-gradient(0deg, rgba(148,0,150,1) 0%, rgba(0,0,80,1)100%);
+# }
+# </style>
+# """
+# st.markdown (page_bg_img, unsafe_allow_html=True)
 
 
 # Load environment variables
@@ -45,7 +47,7 @@ on = st.toggle('OpenDyslexic')
 if on:
     with open("style.css") as css:
         st.markdown(f'<style>{css.read()}</style>' , unsafe_allow_html= True)
-
+val = stx.stepper_bar(steps=["Learn ", "Solve your doubts", "Quiz yourself"])
 load_dotenv()
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
@@ -231,7 +233,20 @@ if uploaded_image is not None:
             summaries = summarize_chunks(chunks)
             aggregated_summary = aggregate_summaries(summaries)
             session_state.data = aggregated_summary
+            json_file_path = os.path.join("pdf_data", "chapter_data.json")
 
+            if len(session_state.data) > 0:
+                data = {"information": session_state.data}
+
+                if os.path.exists(json_file_path):
+                    os.remove(json_file_path)
+
+                if not os.path.exists("pdf_data"):
+                    os.makedirs("pdf_data")
+
+                json_file_path = os.path.join("pdf_data", "chapter_data.json")
+                with open(json_file_path, "w") as json_file:
+                    json.dump(data, json_file)
 
 
 st.write("Or")
@@ -317,6 +332,10 @@ if len(session_state.data) > 0:
 
     title = import_title()
     generate_quiz_data(title)
+
+    processed_title = title.split("** ")
+    print(title)
+    print(processed_title)
     
     #firebase
     doc_ref = db.collection(u'Sumarries').document(title)
