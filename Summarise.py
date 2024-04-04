@@ -42,11 +42,11 @@ db = firestore.client()
 
 
 # Load environment variables
-on = st.toggle('OpenDyslexic')
-if on:
-    with open("style.css") as css:
-        st.markdown(f'<style>{css.read()}</style>' , unsafe_allow_html= True)
-val = stx.stepper_bar(steps=["Learn ", "Solve your doubts", "Quiz yourself"])
+# on = st.toggle('OpenDyslexic')
+# if on:
+#     with open("style.css") as css:
+#         st.markdown(f'<style>{css.read()}</style>' , unsafe_allow_html= True)
+# val = stx.stepper_bar(steps=["Learn ", "Solve your doubts", "Quiz yourself"])
 load_dotenv()
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
