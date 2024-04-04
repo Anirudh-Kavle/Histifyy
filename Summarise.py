@@ -21,7 +21,6 @@ from easyocr import Reader
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
-import extra_streamlit_components as stx
 
 
 if not firebase_admin._apps:
