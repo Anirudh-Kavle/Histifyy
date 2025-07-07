@@ -70,6 +70,7 @@ An educational platform uses AI to convert textbook content into narrative-drive
 
 
 ## Authors 
+
 <div align="left"> 
   <table>
   <tr align="left">
@@ -77,61 +78,61 @@ An educational platform uses AI to convert textbook content into narrative-drive
 
    #### Meghanand 
    <p align="center">
-   <img src = "https://raw.githubusercontent.com/Megh-Zyke/Histify/main/images/meghs.jpg"  height="120" alt="Meghanand">
+   <img src="https://raw.githubusercontent.com/Megh-Zyke/Histify/main/images/meghs.jpg" style="width:120px; height:120px; object-fit:cover; border-radius:50%;" alt="Meghanand">
    </p>
    <p align="center">
-   <a href = "https://github.com/Megh-Zyke"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-   <a href = "https://www.linkedin.com/in/meghanandgejjela/">
-   <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+   <a href="https://github.com/Megh-Zyke"><img src="http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height="36"/></a>
+   <a href="https://www.linkedin.com/in/meghanandgejjela/">
+   <img src="http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
    </a>
    </p>
-    <strong>Python | LLM | AI | Web Dev<strong>
-    </td>
-    <td>
+   <strong>Python | LLM | AI | Web Dev</strong>
+   </td>
 
+   <td>
 
    #### Anirudh Kavle
    <p align="center">
-   <img src = "https://raw.githubusercontent.com/Megh-Zyke/Histify/main/images/Anirudh.jpg"  height="120" alt="Krish Katyal">
+   <img src="https://raw.githubusercontent.com/Megh-Zyke/Histify/main/images/Anirudh.jpg" style="width:120px; height:120px; object-fit:cover; border-radius:50%;" alt="Anirudh Kavle">
    </p>
    <p align="center">
-   <a href = "https://github.com/Anirudh-Kavle"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-   <a href = "https://www.linkedin.com/in/anirudhkavle28/">
-   <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+   <a href="https://github.com/Anirudh-Kavle"><img src="http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height="36"/></a>
+   <a href="https://www.linkedin.com/in/anirudhkavle28/">
+   <img src="http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
    </a>
    </p>
-    <strong>Python | Stable Diffusion | LLM | Web Dev<strong>
-    </td>
-    <td>
-      
+   <strong>Python | Stable Diffusion | LLM | Web Dev</strong>
+   </td>
+
+   <td>
+
    #### Ishan S
    <p align="center">
-   <img src = "https://raw.githubusercontent.com/Megh-Zyke/Histify/main/images/ishan.jpg"  height="120" alt="Krish Katyal">
+   <img src="https://raw.githubusercontent.com/Megh-Zyke/Histify/main/images/ishan.jpg" style="width:120px; height:120px; object-fit:cover; border-radius:50%;" alt="Ishan S">
    </p>
    <p align="center">
-   <a href = "https://github.com/ishan9678"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-   <a href = "https://www.linkedin.com/in/ishan-s-ldr/">
-   <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+   <a href="https://github.com/ishan9678"><img src="http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height="36"/></a>
+   <a href="https://www.linkedin.com/in/ishan-s-ldr/">
+   <img src="http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
    </a>
    </p>
-    <strong>Web Dev | Streamlit | React <strong>
-    </td>
-    <td>
+   <strong>Web Dev | Streamlit | React</strong>
+   </td>
+
+   <td>
 
    #### Nithin Chowdary
    <p align="center">
-   <img src = "https://raw.githubusercontent.com/Megh-Zyke/Histify/main/images/Nithin.jpg"  height="120" alt="Shivam Mitter">
+   <img src="https://raw.githubusercontent.com/Megh-Zyke/Histify/main/images/Nithin.jpg" style="width:120px; height:120px; object-fit:cover; border-radius:50%;" alt="Nithin Chowdary">
    </p>
    <p align="center">
-   <a href = "https://github.com/nithinchowdary2532"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-   <a href = "https://www.linkedin.com/in/nithinchowdaryvakalapudi/">
-   <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
- 
-
+   <a href="https://github.com/nithinchowdary2532"><img src="http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height="36"/></a>
+   <a href="https://www.linkedin.com/in/nithinchowdaryvakalapudi/">
+   <img src="http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
    </a>
    </p>
-    <strong>Web Dev | Gen AI | Python<strong>
-    </td>
-    
-
-
+   <strong>Web Dev | Gen AI | Python</strong>
+   </td>
+  </tr>
+  </table>
+</div>
